@@ -1,0 +1,301 @@
+text,label,scenario_type,channel,speaker_role_pattern,fraud_stage,has_code_request,has_money_transfer_request,has_urgency,has_threat,has_authority_impersonation,has_sensitive_data_request,has_remote_access_request,victim_confused_or_resisting,risk_markers_count
+"Мам это я. Новый номер. Позвони скорее, попал в беду.",fraud,relative_in_trouble,messenger,single_message,hook,0,0,0,0,0,0,0,0,0
+"Операция по карте 5368XXXX5678: оплата 10 000 руб. в Ozon. Если это не вы, позвоните на 8-800-555-35-35.",normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Ваш заказ с WB отправлен Трек CH123456 Ожидаемая дата 25 мая,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+ВНИМАНИЕ Ваш счет будет заморожен через час Предотвратите блокировку сообщив код,fraud,generic_fraud,sms,single_message,unknown,0,0,0,0,0,0,0,0,0
+Прием у кардиолог отменен Перенесли на в Подтвердите пожалуйста,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Ваша посылка из-за границы Таможенная пошлина Времени мало оплатите сейчас,fraud,delivery_fee,sms,single_message,transfer_request,0,1,0,0,0,0,0,0,1
+"Добрый день, звоню напомнить, что ваш приём у дерматологу 15 июня в 11:00.",normal,medical_or_service,call,single_message,benign,0,0,0,0,0,0,0,0,0
+"Запись к кардиологу подтверждена. 15 июня в 09:00. Адрес: ул. Ленина, 10.",normal,medical_or_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Мошенник - Здравствуйте
+Ответчик - Здравствуйте
+Мошенник - Сейчас идет взлом вашего личного кабинета
+Мошенник - Мы создаем безопасную ячейку
+Мошенник - Переведите туда деньги",fraud,generic_fraud,call,dialogue,transfer_request,0,1,0,0,0,0,0,0,1
+Для подтверждения личности назовите номер карты и CVV. Служба безопасности Тинькофф.,fraud,bank_impersonation,call,single_message,data_request,1,0,0,0,1,1,0,0,3
+Курс истории завершён. Сертификат отправлен на ваш email.,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Ваша посылка задержана на таможне. Доплатите 15 000 руб. для получения: bank-alert.info/login,fraud,delivery_fee,sms,single_message,hook,0,1,0,0,0,0,0,0,1
+Ваш аккаунт взломан. Для защиты установите приложение безопасности: bank-alert.info/login,fraud,remote_access,sms,single_message,hook,0,0,0,0,0,0,1,0,1
+"Операция по карте 2200XXXX3456: оплата 3 500 руб. в Лента. Если это не вы, позвоните на 8-800-555-35-35.",normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Ваш номер участвует в лотерее Выигрыш 2000 тенге Перейдите по ссылке,fraud,generic_fraud,sms,single_message,pressure,0,0,0,1,1,0,0,0,2
+"Добрый день, звоним насчёт плановой проверки счётчиков 10 июля в 14:00.",normal,benign_service,call,single_message,benign,0,0,0,0,0,0,0,0,0
+Занятие 15 июня переносится на 09:30. Ссылка на Zoom придёт отдельно.,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Уважаемый пациент, напоминаем о записи к офтальмологу завтра в 16:00. Клиника Мединтерн.",normal,medical_or_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Интернет пополнен на 150000 ГБ Баланс трафика 2000 ГБ,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Медицинская справка будет готова 25 мая Получите в регистратуре,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Платеж на сумму успешно проведен в С уважением поддержки,normal,benign_service,sms,single_message,benign,0,0,0,0,1,0,0,0,1
+Срочно! Ваш аккаунт в Google будет удалён. Войдите: sber-security.ru/confirm,fraud,generic_fraud,sms,single_message,hook,0,0,1,0,0,0,0,0,1
+Суд вынес заочное решение о взыскании 50000 тенге Обжалуйте сегодня,fraud,government_or_police,call,dialogue,pressure,1,0,1,1,1,0,0,0,4
+Поздравляем! Вы выиграли 7 200 руб. Для получения перейдите: sber-security.ru/confirm,fraud,generic_fraud,sms,single_message,hook,0,0,0,0,0,0,0,0,0
+Здравствуйте! Завтра занятие по программированию в 09:00. Не забудьте домашнее задание.,normal,benign_service,call,single_message,benign,0,0,0,0,0,0,0,0,0
+Квитанция за февраль готова Сумма к оплате,normal,benign_service,sms,single_message,transfer_request,0,1,0,0,0,0,0,0,1
+Тест по химии перенесён на в среду. Материал: темы 5–7.,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Напоминание запись к врачу в кабинет,normal,medical_or_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Мошенник - Здравствуйте
+Ответчик - Здравствуйте
+Мошенник - Я звоню из службы безопасности банка
+Ответчик - Да слушаю
+Мошенник - По вашей карте идет подозрительная операция
+Мошенник - Чтобы отменить списание продиктуйте код из смс",fraud,bank_impersonation,call,dialogue,data_request,1,0,0,1,1,0,0,0,3
+Подписка на продлена до Следующее списание,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Напоминаем: профилактический осмотр завтра в 09:00. Медцентр 'Здоровье'.,normal,medical_or_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Cdek Ваш груз на таможне Оплата растаможки 15000 тенге по ссылке срочно,fraud,delivery_fee,sms,single_message,transfer_request,0,1,1,1,0,0,0,0,3
+Против вас возбуждено дело Избежите ареста оплатив залог Не откладывайте,fraud,government_or_police,sms,single_message,transfer_request,0,1,1,1,0,0,0,0,3
+Такси подано Водитель Алибек авто чёрный Toyota время подачи 11:30 мин,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Ваш интернет будет отключен за нарушения Оплатите штраф 3000,fraud,generic_fraud,sms,single_message,data_request,0,0,1,0,0,0,0,0,1
+"Сотрудник - Здравствуйте
+Клиент - Да
+Сотрудник - Это университет
+Сотрудник - Ваш пропуск готов
+Сотрудник - Получить его можно в деканате",normal,benign_service,call,dialogue,benign,0,0,0,0,0,0,0,0,0
+"Курьер ждёт оплаты хранения 100 000 руб., иначе посылка вернётся отправителю.",fraud,delivery_fee,call,single_message,pressure,0,1,0,0,0,0,0,0,1
+Вакцинация от гриппа доступна в вашей поликлинике до 1 июля,normal,medical_or_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Налоговая служба: у вас задолженность 7 200 руб. Оплатите по ссылке bank-alert.info/login.,fraud,government_or_police,sms,single_message,hook,0,1,0,0,1,0,0,0,2
+Ваши бонусные баллы: 100 000. Используйте при следующей покупке в Ozon.,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Напоминаем: профилактический осмотр завтра в 09:00. Клиника 'Ваш доктор'.,normal,medical_or_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Результаты МРТ критические Нужна срочная консультация специалиста за 50000,fraud,medical_or_service_fraud,sms,single_message,hook,0,1,1,0,0,0,0,0,2
+Ваша SIM использована для мошенничества Заблокируйте позвонив нам,fraud,generic_fraud,sms,single_message,data_request,1,0,1,0,0,0,0,0,2
+Ваш рецепт на препарат готов к выдаче в аптеке Мединтерн.,normal,medical_or_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Лекция Квантовая физика состоится в аудитории,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Ваша посылка #33871 прибыла в пункт выдачи. Адрес: пр. Победы, 15.",normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Ваш интернет будет отключен за нарушения Оплатите штраф 50000,fraud,generic_fraud,sms,single_message,hook,0,0,1,1,0,0,0,0,2
+Вы успешно зарегистрированы на вебинар финансовая грамотность 5 июля,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Плановое отключение воды завтра с 11:00 до 18:00. УК УК 'Комфорт'.,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Сервисное сообщение Задолженность за связь 150000 тенге Оплатите по ссылке,fraud,sim_block,sms,single_message,hook,0,0,1,1,1,0,0,0,3
+Бабушка это внук Помоги деньгами я верну завтра обязательно,fraud,relative_in_trouble,sms,single_message,hook,0,1,1,0,0,0,0,0,2
+Спасибо за использование услуг Ваш тариф Безлимит активен до,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Вакцинация в пятницу в 09:00. Возьмите паспорт. Центр здоровья Клиника 'Ваш доктор'.,normal,medical_or_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Уголовное дело возбуждено Для прекращения оплатите залог 50000 тенге срочно,fraud,government_or_police,call,dialogue,hook,0,0,1,1,1,0,0,0,3
+Дорогой клиент Ваша SIM устарела Замените бесплатно подтвердив код из смс,fraud,sim_block,sms,single_message,data_request,0,0,1,1,1,0,0,0,3
+Ваш кешбэк 200000 тенге ожидает Подтвердите карту назвав CVV и срок,fraud,generic_fraud,sms,single_message,pressure,0,0,0,1,1,0,0,0,2
+Срочно! Ваш аккаунт в Google будет удалён. Войдите: bank-alert.info/login,fraud,generic_fraud,sms,single_message,hook,0,0,1,0,0,0,0,0,1
+подано Водитель Михаил авто белый время подачи мин,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Посылка пришла в пункт выдачи ул. Абая 10 Заберите до 30 июня,normal,delivery_fee,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Ваши анализы показали серьезные проблемы Срочно запишитесь на платную консультацию за,fraud,medical_or_service,sms,single_message,pressure,0,0,1,0,0,0,0,0,1
+Напоминаем: профилактический осмотр завтра в 11:00. Медсервис.,normal,medical_or_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Уважаемый пациент, напоминаем о записи к кардиологу 15 июня в 12:00. Клиника Медцентр 'Здоровье'.",normal,medical_or_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Ваша посылка #67301 прибыла в пункт выдачи. Адрес: пр. Победы, 15.",normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Ваш заказ #54321 на Lamoda отправлен Трек для отслеживания,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Оператор - Добрый день
+Клиент - Да
+Оператор - Это служба безопасности Kaspi
+Оператор - С вашего счета хотят снять деньги
+Оператор - Чтобы защитить счет переведите средства на резервный счет",fraud,safe_account,call,dialogue,transfer_request,0,1,0,0,1,0,0,0,2
+Папа это я Артем Попал в аварию нужны деньги на ремонт,fraud,relative_in_trouble,sms,single_message,unknown,0,0,0,0,0,0,0,0,0
+Уведомление: ваш тариф аннулирован. Перейдите sber-security.ru/confirm для восстановления.,fraud,sim_block,sms,single_message,hook,0,0,0,0,0,0,0,0,0
+Запись к стоматологу 15 июня в 15:30 Напоминаем об оплате,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Вакцинация завтра в 10:30. Возьмите паспорт. Центр здоровья Мединтерн.,normal,medical_or_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Вы выиграли приз 20000 тенге Для получения назовите код из смс,fraud,generic_fraud,sms,single_message,hook,0,1,1,0,1,0,0,0,3
+ВНИМАНИЕ Ваш интернет будет отключен за нарушения Оплатите штраф,fraud,generic_fraud,sms,single_message,transfer_request,0,1,0,1,0,0,0,0,2
+Касса возврата НДС Вы получите 5000 тенге Введите данные для зачисления,fraud,generic_fraud,sms,single_message,data_request,1,0,0,1,0,0,0,0,2
+Заказ оформлен на сумму Доставка с до,normal,delivery_fee,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Инвестиция вернулась! Чтобы вывести 7 200, оплатите комиссию 2 000 руб. Карта: 2200XXXX3456.",fraud,generic_fraud,sms,single_message,transfer_request,0,1,0,0,0,0,0,0,1
+Акция в DNS: скидка 15 000% на все товары до 25 мая.,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Здравствуйте! Завтра занятие по математике в 11:00. Не забудьте домашнее задание.,normal,benign_service,call,single_message,benign,0,0,0,0,0,0,0,0,0
+Нотариально заверенная копия готова Заберите в течение 11 дней,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Акция в Ozon: скидка 25 000% на все товары до 20 мая.,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Онлайн-запись к нотариусу подтверждена 30 июня в 16:00,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Специалист - Алло
+Ответчик - Да кто это
+Специалист - Это Kaspi техподдержка
+Специалист - Ваши данные под угрозой
+Специалист - Установите RustDesk и дайте доступ нашему специалисту для проверки",fraud,remote_access,call,dialogue,data_request,0,0,1,0,0,1,1,0,3
+Доставка #98234 ожидает оплаты 100 000 руб. Переведите на карту 4276XXXX1234.,fraud,delivery_fee,sms,single_message,transfer_request,0,1,0,0,0,0,0,0,1
+Папа это я Саша Попал в аварию нужны деньги на ремонт,fraud,relative_in_trouble,sms,single_message,unknown,0,0,0,0,0,0,0,0,0
+Ваша посылка задержана на таможне. Доплатите 5 000 руб. для получения: delivery-pay.ru/order,fraud,delivery_fee,sms,single_message,hook,0,1,0,0,0,0,0,0,1
+"Сотрудник - Добрый день
+Клиент - Да
+Сотрудник - Это нотариус
+Сотрудник - Ваши документы готовы
+Сотрудник - Забрать их можно лично по записи",normal,benign_service,call,dialogue,benign,0,0,0,0,0,0,0,0,0
+Привет! Сегодня в 16:00 встреча по химии. Ждём вас!,normal,benign_service,messenger,single_message,benign,0,0,0,0,0,0,0,0,0
+Зарплата за февраль поступила на карту Сумма,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Ваш груз на сортировочном пункте Выдача 15 июня ПВЗ пр. Аль-Фараби 77,normal,delivery_fee,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Запись к стоматологу 20 мая в 09:00 Напоминаем об оплате,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Оператор - Здравствуйте
+Клиент - Да
+Оператор - Это контакт центр банка
+Оператор - Напоминаем что сотрудники банка не просят перевести деньги на безопасный счет",normal,safe_account,call,dialogue,transfer_request,0,1,0,0,1,0,0,0,2
+Бронирование отеля Marriott подтверждено с 15 июня по 20 мая,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Напоминаем: профилактический осмотр завтра в 16:00. Клиника 'Ваш доктор'.,normal,medical_or_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Здравствуйте это У вас истекает срок действия SIM карты хотите продлить,fraud,sim_block,sms,single_message,unknown,0,0,0,0,0,0,0,0,0
+Тест по английскому перенесён на в пятницу. Материал: темы 5–7.,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Акция в DNS: скидка 3 500% на все товары до в среду.,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Курс английскому завершён. Сертификат отправлен на ваш email.,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Запись на ТО подтверждена 25 мая Автосервис пр. Достык 5,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Привет дочка
+Привет мам
+Это мой новый номер, старый телефон сломался, сохрани пожалуйста",normal,benign_service,call,dialogue,benign,0,0,0,0,0,0,0,0,0
+Поздравляем! Вы выиграли 50 000 руб. Для получения перейдите: bank-alert.info/login,fraud,generic_fraud,sms,single_message,hook,0,0,0,0,0,0,0,0,0
+Автоплатеж за будет списан Спасибо за обращение,normal,benign_service,sms,single_message,transfer_request,0,1,0,0,0,0,0,0,1
+"Оператор - Алло
+Ответчик - Слушаю
+Оператор - Звоню из отдела безопасности Kaspi Gold
+Оператор - Обнаружена утечка ваших данных
+Оператор - Для защиты счета немедленно назовите код подтверждения",fraud,bank_impersonation,call,dialogue,transfer_request,1,1,1,0,1,0,0,0,4
+"Папа, я попал(а) в аварию. Нужно 3 500 руб. срочно, иначе будет хуже.",fraud,relative_in_trouble,call,single_message,pressure,0,0,1,0,0,0,0,0,1
+Звоню из ваш номер отключат завтра Для продления SIM карты назовите код подтверждения,fraud,sim_block,sms,single_message,data_request,1,0,0,0,0,0,0,0,1
+Ваш интернет тариф изменен на Комфорт Скорость до 200 Мбит,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Ваш номер заблокируют за неактивность Активируйте кодом 4321,fraud,generic_fraud,sms,single_message,data_request,0,1,1,0,0,0,0,0,2
+Занятие 25 мая переносится на 11:00. Ссылка на Zoom придёт отдельно.,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Ваши анализы показали критические результаты Срочное обследование за 3000 тенге,fraud,medical_or_service_fraud,sms,single_message,hook,0,0,0,0,0,0,0,0,0
+Онлайн-запись к нотариусу подтверждена 10 июня в 11:30,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Привет! Ты сегодня придёшь? — Да, буду около 14:00.",normal,benign_service,call,dialogue,benign,0,0,0,0,0,0,0,0,0
+Встреча с менеджером подтверждена 5 июля в 09:00 офис ул. Момышулы 12,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Привет! Сегодня в 17:00 встреча по программированию. Ждём вас!,normal,benign_service,messenger,dialogue,benign,0,0,0,0,0,0,0,0,0
+Напоминание оплата аренды 15000 тенге до 5 июля,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Ваш счёт за Google за 10 июля: 10 000 руб. Оплатить до 30 июня.,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Справка готова Получите в регистратуре предъявив паспорт Спасибо за обращение,normal,medical_or_service,sms,single_message,benign,0,0,0,0,0,1,0,0,1
+"Добрый день, служба безопасности Сбербанк. Зафиксирована подозрительная операция на вашем счёте.",fraud,bank_impersonation,call,dialogue,hook,0,1,0,0,1,0,0,0,2
+Это Срочно оплатите за продление сим карты,fraud,sim_block,sms,single_message,transfer_request,0,1,1,0,0,0,0,0,2
+"Ваша посылка #55019 прибыла в пункт выдачи. Адрес: пр. Мира, 25.",normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Ваш платёж по кредиту 2000 тенге принят Остаток долга 2000,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Занятие плаванием 30 июня в 09:00 бассейн ул. Момышулы 12,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Баланс карты Последняя операция,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Здравствуйте! Завтра занятие по истории в 11:00. Не забудьте домашнее задание.,normal,benign_service,call,single_message,benign,0,0,0,0,0,0,0,0,0
+"Добрый день, звоним насчёт плановой проверки счётчиков 25 мая в 14:00.",normal,benign_service,call,single_message,benign,0,0,0,0,0,0,0,0,0
+Подозрительная активность Для защиты счета срочно позвоните по 8800,fraud,generic_fraud,sms,single_message,pressure,0,0,1,1,0,0,0,0,2
+Посылка из за границы Таможенная пошлина Времени мало,fraud,delivery_fee,sms,single_message,pressure,0,1,1,0,0,0,0,0,2
+Папа это я Дима Попал в аварию нужны деньги на ремонт Времени мало,fraud,relative_in_trouble,sms,single_message,pressure,0,0,1,0,0,0,0,0,1
+"Добрый день, звоню напомнить, что ваш приём у педиатру 15 июня в 09:00.",normal,medical_or_service,call,single_message,benign,0,0,0,0,0,0,0,0,0
+Ваш груз на сортировочном пункте Выдача 10 июня ПВЗ ул. Абая 10,normal,delivery_fee,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Анализы готовы. Вы можете получить результаты в регистратуре клиники Медсервис.,normal,medical_or_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Перевод 20000 тенге на ваш счет от Нурлан выполнен,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Выписка по карте за март отправлена на email,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Занятие по физика в переносится на,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Техник - Здравствуйте
+Ответчик - Да
+Техник - Это техническая служба банка
+Техник - На вас оформлен кредит с другого устройства
+Техник - Зайдите по ссылке и установите антивирусный сканер для проверки",fraud,remote_access,call,dialogue,pressure,0,0,1,0,1,0,1,0,3
+"Запись к невропатологу подтверждена. 3 июля в 10:30. Адрес: пр. Победы, 15.",normal,medical_or_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Лёша здесь. Срочно переведи 50 000 на карту 5368XXXX5678. Объясню потом.,fraud,relative_in_trouble,sms,single_message,transfer_request,0,1,1,0,0,0,0,0,2
+"Оператор - Добрый вечер
+Клиент - Слушаю
+Оператор - Вас беспокоит курьерская служба
+Оператор - Курьер будет у вас через час
+Оператор - Оплата при получении как в заказе",normal,delivery_fee,call,dialogue,transfer_request,0,1,0,0,1,0,0,0,2
+"Операция по карте 4276XXXX1234: оплата 50 000 руб. в DNS. Если это не вы, позвоните на 8-800-200-00-00.",normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Оператор - Алло здравствуйте
+Клиент - Да
+Оператор - Это мобильный оператор
+Оператор - Ваша SIM карта будет заблокирована сегодня
+Оператор - Чтобы продлить обслуживание скажите код из сообщения",fraud,sim_block,call,dialogue,data_request,1,0,1,1,1,0,0,0,4
+Снятие наличных в банкомате Комиссия,normal,bank_impersonation,sms,single_message,benign,0,0,0,0,1,0,0,0,1
+Доставка #55019 ожидает оплаты 10 000 руб. Переведите на карту 2200XXXX3456.,fraud,delivery_fee,sms,single_message,transfer_request,0,1,0,0,0,0,0,0,1
+Код для входа в личный кабинет Действителен минут С уважением поддержки,normal,benign_service,sms,single_message,benign,0,0,0,0,1,0,0,0,1
+Нотариально заверенная копия готова Заберите в течение 12 дней,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Ваш автомобиль прошел техосмотр Следующий через 6 месяцев,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Плановое отключение воды в среду с 15:30 до 18:00. УК ТСЖ 'Заря'.,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Промокод 9012 на скидку 15% действует до 1 июля,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Здравствуйте! Завтра занятие по химии в 14:00. Не забудьте домашнее задание.,normal,benign_service,call,single_message,benign,0,0,0,0,0,0,0,0,0
+Лёша здесь. Срочно переведи 5 000 на карту 4276XXXX1234. Объясню потом.,fraud,relative_in_trouble,sms,single_message,transfer_request,0,1,1,0,0,0,0,0,2
+Напоминание прием у кардиолога 15 июня в 09:00 Не опаздывайте,normal,medical_or_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Уважаемый пациент, напоминаем о записи к невропатологу завтра в 09:00. Клиника Клиника 'Ваш доктор'.",normal,medical_or_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Заочное решение о взыскании Отмените оплатив госпошлину 150000 по ссылке,fraud,delivery_fee,sms,single_message,transfer_request,0,1,0,0,0,0,0,0,1
+Ваш паспорт недействителен Восстановите через портал оплатив,fraud,generic_fraud,sms,single_message,transfer_request,0,1,0,0,0,1,0,0,2
+Ваш код подтверждения Никому его не сообщайте С уважением поддержки,normal,benign_service,sms,single_message,benign,1,0,0,0,1,0,0,0,2
+Почтовое отправление из {city} прибыло на склад ожидайте,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Ваши деньги в опасности Переведите их на защищенный счет,fraud,generic_fraud,sms,single_message,transfer_request,0,1,0,1,0,0,0,0,2
+"Если вы не оплатите штраф 7 200 руб. сегодня, будет выдан ордер на арест.",fraud,government_or_police,call,dialogue,pressure,0,1,0,1,0,0,0,1,2
+Курьер прибудет через 20 минут. Заказ #67301.,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Здравствуйте, это Клиника 'Ваш доктор'. Напоминаем про визит к кардиологу в 15:30.",normal,medical_or_service,call,single_message,benign,0,0,0,0,0,0,0,0,0
+Доставка #12045 ожидает оплаты 3 500 руб. Переведите на карту 5368XXXX5678.,fraud,delivery_fee,sms,single_message,transfer_request,0,1,0,0,0,0,0,0,1
+Напоминание: занятие по рисованию 20 мая в 10:30. Преподаватель — Алексей.,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Добрый день, звоним насчёт плановой проверки счётчиков 18 июня в 11:00.",normal,benign_service,call,single_message,benign,0,0,0,0,0,0,0,0,0
+Коммунальные услуги оплачены 1000 тенге Квитанция на почте,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Мам не пугайся Я в больнице понадобилась операция нужно 2000,fraud,relative_in_trouble,sms,single_message,hook,0,1,1,0,0,0,0,0,2
+Техобслуживание сети с до Возможны кратковременные перебои,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Инвестиция вернулась! Чтобы вывести 25 000, оплатите комиссию 3 500 руб. Карта: 5368XXXX5678.",fraud,generic_fraud,sms,single_message,transfer_request,0,1,0,0,0,0,0,0,1
+На вас оформлена страховка Отмените оплатив 200000 тенге сегодня,fraud,generic_fraud,sms,single_message,data_request,1,0,1,0,1,0,0,0,3
+Ваш кешбэк 30000 тенге ожидает Подтвердите карту назвав CVV и срок,fraud,generic_fraud,sms,single_message,hook,0,1,0,0,1,0,0,0,2
+Уважаемый абонент Ваш баланс Пополните счет для продолжения пользования услугами,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Чтобы избежать уголовного преследования, переведите залог 100 000 руб. на счёт 5368XXXX5678.",fraud,government_or_police,call,dialogue,transfer_request,0,1,0,1,0,0,0,1,2
+Ваш заказ #55019 передан курьеру. Ожидайте 3 июля.,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Суд вынес заочное решение о взыскании 100000 тенге Обжалуйте сегодня,fraud,government_or_police,call,dialogue,hook,0,0,0,0,1,0,0,0,1
+Платеж за ЖКУ 30000 принят Следующая оплата 25 мая,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Cdek Ваш груз на таможне Оплата растаможки 1000 тенге по ссылке срочно,fraud,delivery_fee,sms,single_message,transfer_request,0,1,0,0,0,0,0,0,1
+Поздравляем вы стали тысячным покупателем Приз 500 тенге по ссылке,fraud,generic_fraud,sms,single_message,unknown,0,1,1,0,0,0,0,0,2
+Ваша учетная запись заморожена Разморозьте назвав код из смс,fraud,generic_fraud,sms,single_message,unknown,0,1,0,1,0,0,0,0,2
+Услуга Интернет подключена Стоимость,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Результаты экзамена опубликованы Проверьте в личном кабинете,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Тест по программированию перенесён на 18 июня. Материал: темы 5–7.,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Оператор - Алло здравствуйте
+Клиент - Да
+Оператор - Это Kaspi служба безопасности
+Оператор - С вашего счета хотят снять все средства
+Оператор - Чтобы защитить деньги переведите их на наш страховой счет",fraud,safe_account,call,dialogue,transfer_request,0,1,0,1,0,0,0,0,2
+"Инвестиция вернулась! Чтобы вывести 100 000, оплатите комиссию 2 000 руб. Карта: 5368XXXX5678.",fraud,generic_fraud,sms,single_message,transfer_request,0,1,0,0,0,0,0,0,1
+Здравствуйте! Завтра занятие по химии в 12:00. Не забудьте домашнее задание.,normal,benign_service,call,dialogue,benign,0,0,0,0,0,0,0,0,0
+Ваш заблокирован Разблокировка стоит,fraud,generic_fraud,sms,single_message,unknown,0,0,0,1,0,0,0,0,1
+Срочно! Ваш аккаунт в Госуслуги будет удалён. Войдите: bank-alert.info/login,fraud,generic_fraud,sms,single_message,hook,0,0,1,0,0,0,0,0,1
+Онлайн-запись к нотариусу подтверждена 1 июля в 12:00,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Поздравляем Ваш номер выиграл в акции Kaspi Получите 10000 по ссылке,fraud,generic_fraud,sms,single_message,hook,0,0,1,1,0,0,0,0,2
+"Привет! Ты сегодня придёшь? — Да, буду около 10:30.",normal,benign_service,call,single_message,benign,0,0,0,0,0,0,0,0,0
+Ваш запрос на возврат 30000 тенге обрабатывается до 25 мая,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Саша здесь. Срочно переведи 3 500 на карту 5368XXXX5678. Объясню потом.,fraud,relative_in_trouble,sms,single_message,transfer_request,0,1,1,0,0,0,0,0,2
+Обновление системы завершено Новые функции доступны в личном кабинете,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+ВНИМАНИЕ Ваш паспорт недействителен Восстановите через портал оплатив,fraud,generic_fraud,sms,single_message,transfer_request,0,1,0,0,0,1,0,0,2
+ВНИМАНИЕ Вы стали победителем акции Приз Оплатите налог для получения,fraud,government_or_police,sms,single_message,transfer_request,0,1,0,0,0,0,0,0,1
+Медицинская лаборатория Ваши анализы на COVID-19 положительны Штраф 5000,fraud,medical_or_service_fraud,sms,single_message,hook,0,1,1,1,0,0,0,0,3
+"Привет! Ты сегодня придёшь? — Да, буду около 12:00.",normal,benign_service,call,single_message,benign,0,0,0,0,0,0,0,0,0
+Техническое обслуживание сайта 25 мая с 14:00 до 12:00,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Абонемент в продлен до Стоимость,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Мошенник - Здравствуйте
+Ответчик - Слушаю
+Мошенник - Это служба безопасности Kaspi Bank
+Мошенник - По вашей карте проходит подозрительная операция на 2000 тенге
+Мошенник - Чтобы её отменить назовите код из смс",fraud,bank_impersonation,call,dialogue,transfer_request,1,0,0,0,1,0,0,0,2
+"Попал в больницу, нужна операция. Срочно 3 500 руб. на счёт 5368XXXX5678.",fraud,relative_in_trouble,sms,single_message,transfer_request,0,1,1,0,0,0,0,0,2
+Запись в МФЦ подтверждена 5 июля Возьмите оригиналы документов,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Безопасность аккаунта нарушена Войдите и подтвердите личность срочно,fraud,generic_fraud,sms,single_message,pressure,0,0,1,0,0,0,0,0,1
+"Запись к офтальмологу подтверждена. 25 мая в 15:30. Адрес: пр. Мира, 25.",normal,medical_or_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Напоминание: занятие по истории в пятницу в 14:00. Преподаватель — Сидоров К.Н..,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Тест по математике перенесён на 18 июня. Материал: темы 5–7.,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Заказ готов к выдаче в пункте самовывоза Режим работы,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Звонящий - Алло
+Ответчик - Да
+Звонящий - Ваша карта будет заблокирована
+Звонящий - Чтобы сохранить деньги переведите их себе на безопасный счет",fraud,safe_account,call,dialogue,transfer_request,0,1,0,1,0,0,0,0,2
+Квитанция за май готова Сумма к оплате Спасибо за обращение,normal,benign_service,sms,single_message,transfer_request,0,1,0,0,0,0,0,0,1
+Кредитный платёж 7 200 руб. списан. Следующий платёж 18 июня.,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Звонящий - Добрый день
+Ответчик - Да
+Звонящий - Вам одобрен возврат средств
+Звонящий - Для получения денег зайдите в приложение банка
+Звонящий - И сообщите код безопасности",fraud,bank_impersonation,call,dialogue,unknown,1,0,0,0,1,0,0,0,2
+Розыгрыш от Halyk Bank Вы выиграли 15000 тенге Введите код 8765,fraud,generic_fraud,sms,single_message,data_request,0,0,0,1,0,0,0,0,1
+Вы успешно зарегистрированы на вебинар маркетинг 25 мая,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+СРОЧНО Постановление суда об аресте счетов Обжалуйте оплатив пошлину 50000,fraud,government_or_police,call,dialogue,pressure,0,0,1,0,1,0,0,0,2
+Встреча с менеджером подтверждена 10 июня в 14:00 офис пр. Аль-Фараби 77,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Лотерея вы выиграли автомобиль стоимостью Оплатите оформление,fraud,generic_fraud,sms,single_message,transfer_request,0,1,0,0,0,0,0,0,1
+Для получения посылки подтвердите адрес и оплатите страховку 5 000 руб.: sber-security.ru/confirm,fraud,delivery_fee,sms,single_message,hook,0,1,0,0,0,0,0,0,1
+"Здравствуйте, это салон, напоминаем о записи на стрижку завтра в 18:00",normal,benign_service,call,single_message,benign,0,0,0,0,0,0,0,0,0
+Добрый день! Ваш заказ #12045 собран и готов к отправке.,normal,benign_service,messenger,single_message,benign,0,0,0,0,0,0,0,0,0
+Международная посылка прошла таможню Доставка ожидается 30 июня,normal,delivery_fee,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Срочно! Ваш аккаунт в Сбербанк Онлайн будет удалён. Войдите: sber-security.ru/confirm,fraud,generic_fraud,sms,single_message,hook,0,0,1,0,0,0,0,0,1
+Водитель Сидоров К.Н. ожидает вас. Номер авто: В456ГД.,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Звонящий - Добрый вечер
+Ответчик - Слушаю
+Звонящий - Вас беспокоит следователь финполиции
+Звонящий - Ваш счет участвует в мошеннической схеме
+Звонящий - Переведите средства на специальный счет для проведения проверки",fraud,safe_account,call,dialogue,transfer_request,0,1,1,0,0,0,0,0,2
+Тариф изменен на Стандарт Стоимость с,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Мам я не могу говорить Нужно 100000 срочно потом всё объясню,fraud,relative_in_trouble,sms,single_message,pressure,0,1,1,0,0,0,0,0,2
+Доставка #45821 ожидает оплаты 15 000 руб. Переведите на карту 4276XXXX1234.,fraud,delivery_fee,sms,single_message,transfer_request,0,1,0,0,0,0,0,0,1
+"Чтобы избежать уголовного преследования, переведите залог 15 000 руб. на счёт 4276XXXX9012.",fraud,government_or_police,call,single_message,transfer_request,0,1,0,1,0,0,0,1,2
+Ваш заказ в Лента готов к выдаче. Код: 9034. Срок хранения — 3 дня.,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+Бронирование отеля Marriott подтверждено с 10 июня по 25 мая,normal,benign_service,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Оператор - Добрый день
+Клиент - Да
+Оператор - Вы оставляли заявку на перевыпуск карты
+Клиент - Да
+Оператор - Готовую карту можно забрать в отделении с удостоверением личности",normal,benign_service,call,dialogue,benign,0,0,0,0,1,0,0,0,1
+Результаты экзамена опубликованы Проверьте в личном кабинете С уважением поддержки,normal,benign_service,sms,single_message,benign,0,0,0,0,1,0,0,0,1
+Квитанция за март готова Сумма к оплате С уважением поддержки,normal,benign_service,sms,single_message,transfer_request,0,1,0,0,1,0,0,0,2
+в пути с заказом Ожидаемое время доставки Спасибо за обращение,normal,delivery_fee,sms,single_message,benign,0,0,0,0,0,0,0,0,0
+"Мошенник - Алло
+Ответчик - Да
+Мошенник - Это оператор сотовой связи
+Мошенник - Ваш номер отключат через десять минут
+Мошенник - Назовите код чтобы продлить SIM карту",fraud,sim_block,call,dialogue,data_request,1,0,0,0,1,0,0,0,2

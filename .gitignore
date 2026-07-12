@@ -7,7 +7,7 @@ __pycache__/
 .idea/
 .vscode/
 
-fraud_call_model_*/
+fraud_call_model_multiple_choice_20260516_001902/
 *.safetensors
 *.bin
 
@@ -17,3 +17,25 @@ fraud_call_model_*/
 
 .DS_Store
 Thumbs.db
+
+# --- Модели (веса) ---
+*.safetensors
+*.bin
+*.h5              ← Keras/TensorFlow
+*.keras           ← новый формат Keras
+*.pkl             ← pickle (sklearn, ансамбль, Naive Bayes)
+*.joblib          ← sklearn через joblib
+*.pt              ← PyTorch
+*.pth             ← PyTorch
+*.onnx            ← ONNX
+*.ckpt            ← чекпоинты
+*.model           ← общий
+*.tflite          ← если конвертировали для Android
+
+# --- Папки с обученными моделями и результатами ---
+fraud_call_model_*/
+NewDatasetAndNewTrainModels/
+notUsableFiles/
+results_new/
+results_new2/
+new_datasets/

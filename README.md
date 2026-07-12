@@ -104,7 +104,7 @@ The system outputs:
 
 1. Clone the repository
 
-git clone https://github.com/DauletZhaksylyk/MyNNProjectForMaster.git  
+git clone  
 cd MyNNProjectForMaster  
 
 2. Create a virtual environment  
@@ -192,23 +192,7 @@ Focus areas:
 - real-time detection  
 - dialogue-aware models  
 - explainable AI visualization  
-- production integration  
-
----
-
-## Author
-
-Daulet Zhaksylyk  
-Master’s Student — Information Security Systems  
-
-Research interests:
-
-- Cybersecurity  
-- Social Engineering Detection  
-- Machine Learning  
-- User Behavior Analysis  
-
----
+- production integration 
 
 ## License
 
